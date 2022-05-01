@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulko</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <nav class="header__menu">
+      <div class="header__bulkocontainer">
+        <img src="asset/logoBulko.png" alt="" class="header__logobulko">
+      </div>
+      <h1 class="header__titrepage">contact</h1>
+      <div class="header__rsncontainer">
+        <img class="header__rsnlogo" src="asset/reseauxSociaux.png" alt="">
+      </div>
+    </nav>
+  </header>
+  <section class="main">
+    <img class="main__bg" src="asset/background.jpg" alt="">
+    <div class="main__form">
+      <form action="contactform.php" method="POST">
+        <div class="form__inputs">
+          <div class="form__details">
+            <input name="nom" class="input__nom" type="text" placeholder="Nom">
+            <input name="mail" class="input__mail" type="email" placeholder="Mail" required>
+            <input name="telephone" class="input__tel" type="tel" placeholder="Téléphone" minlength="10" maxlength="10" required>
+          </div>
+          <textarea name="message" class="input__msg" placeholder="Message"></textarea>
+        </div>
+        <button type="button">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="asset/js/script.js" charset="utf-8" defer></script>
+</body>
+</html>
